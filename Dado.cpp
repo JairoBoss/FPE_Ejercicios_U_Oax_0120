@@ -9,12 +9,12 @@ const int LADOS = 12;
 int main()
 {
     char opc, c;
-    srand(time(0));
+    srand(time(0)); //Inicializar la semilla de números aleatorios
     printf("Este programa simula la acción de tirar un dado\n");
     do
     {
         printf("\n\nTirando el dado...\n");
-        printf("El dado cayo en: %d\n", (rand() % LADOS) + 1);
+        printf("El dado cayo en: %d\n", (rand() % LADOS) + 1); //Se suma una unidad a la operación de modulo, ya que inicia en 0 en lugar de 1
         printf("Otro tiro? [s/n]");
         scanf_s("%c", &opc, 1);
         while ((c = getc(stdin)) != '\n' && c != EOF); //Esta linea hace flush a la entrada
