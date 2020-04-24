@@ -6,11 +6,13 @@
 
 float volumen_cono(float radio, float altura);
 float volumenDeEsfera(float radio);
+float volumenDePiramide(float area, float altura);
 
 int main()
 {
     char c;
     float radio_base_cono, altura_cono, radio_esfera, altura_prisma, area_base_prisma;
+    float area, altura;
     printf("Programa que calcula el volumen de cuerpos geometricos\n");
     printf("\n");
     printf("db    db  .d88b.  db      db    db .88b  d88. d88888b d8b   db \n");
@@ -42,5 +44,12 @@ int main()
     scanf("%f",&altura_cono);
     while ((c = getc(stdin)) != '\n' && c != EOF); //Esta linea hace flush a la entrada
     printf("El volumen del cono es %.4lf u^3", volumen_cono(radio_base_cono,altura_cono));
+    
+    
+    printf("Area de la base:\n");
+    scanf("%f", &area);
+    printf("la altura:\n");
+    scanf("%f", &altura);
+    printf("Volumen de la piramide es: %f",volumenDePiramide(area, altura));
     
 }
