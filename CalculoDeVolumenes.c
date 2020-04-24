@@ -5,6 +5,7 @@
 
 
 float volumen_cono(float radio, float altura);
+float volumen_prisma(float area_base_prisma, float altura_prisma);
 float volumenDeEsfera(float radio);
 float volumenDePiramide(float area, float altura);
 
