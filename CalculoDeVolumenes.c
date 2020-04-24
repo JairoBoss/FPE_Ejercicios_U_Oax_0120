@@ -7,10 +7,13 @@
 float volumen_cono(float radio, float altura);
 float volumenDeEsfera(float radio);
 
+float volumenDePiramide(float area, float altura);
+
 int main()
 {
     char c;
     float radio_base_cono, altura_cono, radio_esfera;
+    float area, altura;
     printf("Programa que calcula el volumen de cuerpos geometricos\n");
     /*printf("Calculo del volumen de un cono\n");
     printf("Ingrese el valor del radio de la base del cono: ");
@@ -33,4 +36,9 @@ int main()
     scanf("%f", &radio_esfera);
     while ((c = getc(stdin)) != '\n' && c != EOF); //Esta linea hace flush a la entrada
     printf("Volumen dela esfera es: %f",volumenDeEsfera(radio_esfera));
+    printf("Area de la base:\n");
+    scanf("%f", &area);
+    printf("la altura:\n");
+    scanf("%f", &altura);
+    printf("Volumen de la piramide es: %f",volumenDePiramide(area, altura));
 }
