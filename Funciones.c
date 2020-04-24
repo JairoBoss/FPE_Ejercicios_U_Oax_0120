@@ -21,3 +21,14 @@ float volumenDePiramide(float area, float altura) {
   return (area*altura)/3;
 }
 
+float VParale(float x,float y,float t)
+    {
+    	float volp=x*y*t;
+    	return volp;
+	}
+
+float Vcili(float t,float v)
+    {
+    	float volc=t*v*M_PI;
+    	return volc;
+	}
