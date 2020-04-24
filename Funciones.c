@@ -16,3 +16,8 @@ float volumen_prisma(float area_base_prisma, float altura_prisma){
 float volumenDeEsfera(float radio) {
   return (4 * (PI * radio*radio*radio)) / 3;
 }
+
+float volumenDePiramide(float area, float altura) {
+  return (area*altura)/3;
+}
+
