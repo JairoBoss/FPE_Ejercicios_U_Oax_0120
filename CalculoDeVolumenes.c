@@ -41,4 +41,15 @@ int main()
     printf("la altura:\n");
     scanf("%f", &altura);
     printf("Volumen de la piramide es: %f",volumenDePiramide(area, altura));
+    
+    //Estos son del equipo que falta xdxdxd
+    //es el cilindro
+    
+    float radio, altura;
+  printf("\n");
+    printf("Area de la base:\n");
+    scanf("%f", &radio);
+    printf("la altura:\n");
+    scanf("%f", &altura);
+    printf("Volumen del cilindro es: %f",volumenDeCilindro( radio,  altura));
 }
