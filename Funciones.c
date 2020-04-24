@@ -27,6 +27,10 @@ float VParale(float x,float y,float t)
     	return volp;
 	}
 
+float volumenDeCilindro(float radio, float altura) {
+  return (PI*radio*radio*altura);
+}
+
 float Vcili(float t,float v)
     {
     	float volc=t*v*M_PI;
