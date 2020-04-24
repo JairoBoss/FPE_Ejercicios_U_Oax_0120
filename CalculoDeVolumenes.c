@@ -8,6 +8,8 @@ float volumen_cono(float radio, float altura);
 float volumen_prisma(float area_base_prisma, float altura_prisma);
 float volumenDeEsfera(float radio);
 float volumenDePiramide(float area, float altura);
+float VParale(float x,float y,float t);
+float Vcili(float t,float v);
 
 int main()
 {
