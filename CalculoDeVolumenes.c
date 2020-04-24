@@ -27,20 +27,20 @@ int main()
     printf("Volumen dela esfera es: %f",volumenDeEsfera(radio_esfera));
     
     //Aqui inicia para cono y prisma del equipo 1
-    printf("Digite el area de la base en m^3: ");
+    printf("Digite el area de la base: ");
     scanf("%f", &area_base_prisma);
     while ((c = getc(stdin)) != '\n' && c != EOF); //Esta linea hace flush a la entrada
-    printf("Digite la altura en m^3: ");
+    printf("Digite la altura: ");
     scanf("%f", &altura_prisma);
     while ((c = getc(stdin)) != '\n' && c != EOF); //Esta linea hace flush a la entrada
-    printf("El volumen del prisma es %.4lf m^3", volumen_prisma(area_base_prisma,altura_prisma));
+    printf("El volumen del prisma es %.4lf u^3", volumen_prisma(area_base_prisma,altura_prisma));
     
-    printf("Digite el radio en m^3: ");
+    printf("Digite el radio: ");
     scanf("%f", &radio_base_cono);
     while ((c = getc(stdin)) != '\n' && c != EOF); //Esta linea hace flush a la entrada
-    printf("Digite la altura en m^3: ");
+    printf("Digite la altura: ");
     scanf("%f",&altura_cono);
     while ((c = getc(stdin)) != '\n' && c != EOF); //Esta linea hace flush a la entrada
-    printf("El volumen del cono es %.4lf m^3", volumen_cono(radio_base_cono,altura_cono));
+    printf("El volumen del cono es %.4lf u^3", volumen_cono(radio_base_cono,altura_cono));
     
 }
